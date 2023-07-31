@@ -1,0 +1,14 @@
+.tabIcon {
+  color: "#53545C";
+}
+
+.tabWithIconBackground {
+  background-color: #efeff0;
+}
+
+.tabWithIcon:hover .tabIcon {
+  color: white;
+}
+.tabWithIcon:hover .tabText {
+  color: white;
+}

@@ -1,0 +1,11 @@
+.sideBarIcon,
+.sideBarText {
+  color: black;
+}
+
+.sideBarTab:hover .sideBarIcon {
+  color: white;
+}
+.sideBarTab:hover .sideBarText {
+  color: white;
+}

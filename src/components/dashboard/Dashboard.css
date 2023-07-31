@@ -1,0 +1,43 @@
+.cardIcon {
+  color: burlywood;
+}
+
+.dashboardContainer {
+  display: grid;
+  height: calc(100vh - 69px);
+  /* width: calc(100vw - 296px); */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "firstChild secondChild thirdChild"
+    "fourthChild fifthChild seventhChild"
+    "fourthChild sixthChild seventhChild"
+    "eightChild eightChild seventhChild"
+    "eightChild eightChild seventhChild";
+  grid-gap: 1rem;
+}
+
+.firstChild {
+  grid-area: firstChild;
+}
+.secondChild {
+  grid-area: secondChild;
+}
+.thirdChild {
+  grid-area: thirdChild;
+}
+.fourthChild {
+  grid-area: fourthChild;
+}
+.fifthChild {
+  grid-area: fifthChild;
+}
+.sixthChild {
+  grid-area: sixthChild;
+}
+.seventhChild {
+  grid-area: seventhChild;
+}
+.eightChild {
+  grid-area: eightChild;
+}

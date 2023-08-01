@@ -17,15 +17,15 @@ const TabWithIcon = ({
   return (
     <div
       className={`w-full items-center gap-4 rounded-lg  cursor-pointer ${
-        isDestInPath && "bg-[#5560F1] text-white"
-      } ${
+        isDestPath && "bg-[#5560F1]"
+      } ${isDestInPath && "bg-[#5560F1] text-white"} ${
         className
           ? className
-          : "bg-white hover:bg-[#5560F1] px-[10px] py-[10px] tabWithIcon"
+          : "hover:bg-[#5560F1] px-[10px] py-[10px] tabWithIcon"
       } ${inverse ? "flex flex-row-reverse" : "flex"}`}
     >
       <IconContext.Provider
-        value={{ className: `${isDestInPath && "text-white"} tabIcon` }}
+        value={{ className: `${isDestPath && "text-[#fff]"} tabIcon` }}
       >
         {icon}
       </IconContext.Provider>
@@ -33,7 +33,7 @@ const TabWithIcon = ({
       <p
         className={`${
           textColor ? textColor : "tabText text-black text-[14px] font-inter"
-        } ${isDestInPath && "text-white"}`}
+        } ${isDestPath && "text-[#fff]"} ${isDestInPath && "text-[#fff]"}`}
       >
         {text}
       </p>
